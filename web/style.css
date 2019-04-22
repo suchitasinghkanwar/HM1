@@ -1,0 +1,69 @@
+body
+{
+	margin:0;
+	padding:10px;
+	background-color:#808080;
+	font-size:25px;
+	font-family:sans-serif;
+	height:70px;
+	
+}
+body h1
+{
+	margin:40px;
+	padding:3px;
+	text-align:center;
+	font-size:70px;
+	color:#8a0000;
+}
+
+.login
+{
+	border:3px solid white;
+	padding:3px;
+	text-align:center;
+	border-radius:100px;
+	margin-top:70px;
+	margin-left:450px;
+	width:40%;
+	height:750%;
+	color:#8a0000;
+	background-color:white;
+	font-size:18px;
+	
+}
+
+
+button:hover {
+  opacity: 1.0;
+}
+input
+{
+	width:30%;
+	padding:3px;
+	border:1px solid;
+	border-radius:4px;
+	box-sizing:border-box;
+	margin-top:7px;
+	margin-bottom:7px;
+}
+ input[type=submit]
+ {
+ background-color:#ffffff;
+ padding:3px;
+ }
+ span.psw {
+  float:center;
+  padding-top: 20px;
+}
+ 
+ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 Mar, 2019, 8:24:15 PM
+    Author     : Suchita
+*/
+

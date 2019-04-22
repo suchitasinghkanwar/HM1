@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LOGIN FORM</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image:url('bgd.jpg'); background-repeat:no-repeat; background-size:1920px 750px;">
+<h1><b>LOG IN</b></h1>
+<div class="login">
+
+<form name="myForm" method="post" id="login" action="LoginController" onsubmit="return myValidation()">
+
+<br><br><label for="uname"><img src="images/user.png" width="40" height="40" ><b> User_id</b></label>
+<input type="text" placeholder="Enter Username" name="uname" ><br>
+
+    <label for="psw"><img src="images/pswd.jpg" width="40" height="40" ><b> Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" ><br>
+    
+    
+    
+    <button type="submit" style="font-size:20px" class="btn btn-danger btn-sm"><img src="images/login.jpg" width="40" height="40" >   Login </button><br>
+    
+    
+    </form>
+    </div>
+    
+  <script>
+  
+  function myValidation()
+  {
+	  var user=document.forms["myForm"]["uname"].value;
+	  var psw=document.forms["myForm"]["psw"].value;
+	  var flag=true;
+	  
+	  if(user=="")
+		  {
+		    alert("username cannot be empty!");
+		    flag=false;
+		  }
+	  if(psw=="")
+		  {
+		    alert("password cannot be empty!");
+		    flag=false;
+		  }
+	  return flag;
+  }
+  </script>
+  
+  </body>
+  </html>
